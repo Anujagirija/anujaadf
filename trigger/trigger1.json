@@ -7,6 +7,10 @@
 			"pipelineReference": {
 				"referenceName": "copytextdata",
 				"type": "PipelineReference"
+			},
+			"parameters": {
+				"windowStart": "@(addminutes(trigger().scheduledTime,-2))",
+				"windowEnd": "@trigger().scheduledTime"
 			}
 		},
 		"type": "TumblingWindowTrigger",
