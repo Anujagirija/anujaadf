@@ -1,0 +1,21 @@
+{
+	"name": "copyExample",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragels",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "destination"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
